@@ -1,0 +1,119 @@
+body {
+    font-family: 'Times New Roman', Times, Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: rgb(196, 206, 223);
+    padding: 30px;
+}
+
+ul, li, p {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(75, 75, 161);
+}
+
+h2 {
+    color: rgb(42, 9, 119);
+}
+
+header {
+    text-align: center;
+    font-family: Cookie, 'Times New Roman', Times, serif;
+    font-size: x-large
+}
+
+/* Perfil */ 
+
+#perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+#perfil img {
+    border-radius: 50px;
+}
+
+.contato {
+    border-radius: 10px;
+    border-style: double;
+    border-color: rgb(84, 84, 161);
+    padding: 10px;
+}
+
+.contatoimg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black !important;
+}
+
+
+/* Formação */
+
+#formação {
+    width: auto;
+    border-style: solid;
+    border-left: transparent;
+    border-right: transparent;
+    padding: 5px 15px;
+    
+}
+
+#formação .titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+/* Sobre */ 
+
+#sobre {
+    border-style: solid;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    padding: 5px 15px;
+}
+
+/* Exp */
+
+#exp {
+    padding: 5px 15px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* perfil */
+
+    #perfil {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    #formação {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #sobre {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #exp {      
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
